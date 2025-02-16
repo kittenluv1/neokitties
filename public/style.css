@@ -3,7 +3,45 @@
    "how to change link color." */
 
 body {
-  background-color: white;
+  margin: 0; 
+  background-color: darkblue;
   color: black;
   font-family: Verdana;
+  text-align: center; 
+  display: grid; 
+  grid-template-rows: auto auto; 
+  grid-template-columns: 1fr 2fr 1fr; 
+  gap: 3%;
+  padding: 3%; 
 }
+
+header {
+  grid-area: 1 / 2; 
+}
+
+aside {
+  grid-area: 2 / 1; 
+}
+
+main {
+  grid-area: 2 / 2;
+}
+
+nav {
+  grid-area: 2 / 3; 
+}
+
+h1 {
+  margin: 0; 
+}
+
+.section {
+  border: 3px solid hotpink; 
+  background-color: white; 
+  border-radius: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-items: center; 
+}
+
