@@ -1,4 +1,4 @@
-
+/* HTML ELEMENTS */
 body {
   margin: 0; 
   background-color: darkblue;
@@ -10,6 +10,7 @@ body {
   grid-template-columns: 1fr 2fr 1fr; 
   gap: 3vh;
   padding: 3%; 
+  box-shadow: inset 0 0 5rem rgb(200, 200, 254);
 }
 
 header {
@@ -30,21 +31,62 @@ nav {
 
 h1 {
   margin: 0; 
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin: 0; 
+  margin-top: 1rem;
 }
 
+a:link {
+  color: hotpink; 
+}
+
+a:visited {
+  color: darkblue; 
+}
+
+a:hover {
+  font-weight: bold; 
+}
+
+/* DIV CLASSES */
 .section {
   border: 3px solid hotpink; 
-  background-color: white; 
+  background-color: rgb(250, 240, 240); 
   border-radius: 10px; 
   display: flex; 
   flex-direction: column; 
   align-items: center; 
   justify-items: center; 
-  padding: 0 2vh; 
+  padding: 2vh; 
+  box-shadow: 1em 1em 2em rgb(250, 240, 240), 0 0 2rem hotpink;
+}
+
+.content-div {
+  width: 100%; 
+  text-align: left; 
+}
+
+/* CONTENT STYLING */
+#updates-div {
+  border: 1px solid black; 
+
+  & ul {
+    list-style-type: none; 
+    padding: 0;  
+  }
+
+}
+
+/* IMAGE ASSETS */ 
+#treble-cat {
+  position: absolute; 
+  height: 8vw; 
+  left: 18%;
+  top: 13%;
+  rotate: -10deg;
 }
 
