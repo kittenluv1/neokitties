@@ -1,0 +1,2 @@
+document.getElementById('kitten-btn').addEventListener('click', () => {window.location.href="https://kittenluv1.com/"});
+document.getElementById('neocities-btn').addEventListener('click', () => {window.location.href="https://kittenluv1.neocities.org/"});

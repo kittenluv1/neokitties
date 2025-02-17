@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>resources 4 u</title>
+	<link rel="icon" type="image/png" href="tool.png">
+	<link href="resources.css" rel="stylesheet">
+	<script src="resources.js" defer></script>
+</head>
+<body>
+	<button id="kitten-btn">
+		<img src="/public/index/trble-cat.png">
+		&larr;kittenluv1
+	</button>
+	<button id="neocities-btn">
+		<img src="flyingtoro.png">
+		neocities&rarr;
+	</button>
+	<main>
+		<h2>Resources Page</h2>
+		<h3>tools & tips i use for creating my sites</h3>
+		<p>website tools & workflow</p>
+			<ul>
+				<li>
+					servers & techy stuff
+					<ul>
+						<li>Github pages (<a href="https://youtu.be/p1QU3kLFPdg?si=RrATTjA4bet5Uwaf" target="_blank">tutorial</a>)</li>
+						<li>Namecheap</li>
+						<li>Cloudflare - honestly still not sure what this does but here’s a tutorial i used to set it up: <a href="https://youtu.be/N7n_HtvwNVA?si=BpBAhaNFN6eITSIm" target="_blank">https://youtu.be/N7n_HtvwNVA?si=BpBAhaNFN6eITSIm</a></li>
+					</ul>
+				</li>
+				<li>creating assets
+					<ul>
+						<li>Adobe photoshop</li>
+						<li>Medibang paint</li>
+					</ul>
+				</li>
+				<li>Image compression</li>
+					<ul>
+						<li><a href="https://www.remove.bg/" target="_blank">remove.bg</a></li>
+						<li><a href="https://tinypng.com/" target="_blank">TinyPNG</a></li>
+						<li><a href="https://imageresizer.com/" target="_blank">image resizer</a></li>
+					</ul>
+				<li>text emoji combos: <a href="https://emojicombos.com/star" target="_blank">⋆.˚𖦹⋆✮⋆.˚</a></li>
+			</ul>
+		<p>How to's:</p>
+			<ul>
+				<li><a href="https://bcorp.neocities.org/articles/neocities-env" target="_blank">Configure neocities with github & vscode</a> by bcorp</li>
+				<li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> - read documentation! i know a lot of people also use <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> tutorials</li>
+				<li>videos and random tutorials i have saved on yt: <a href="https://youtube.com/playlist?list=PLmL6gbhtv4EAQB5kclz8qjmWaB9BED0Xz&si=DMs1Sik2sDyPFf_1" target="_blank">click to open playlist</a></li>
+			</ul>
+		<p>Terminal tools</p>
+			<ul>
+				<li><a href="https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#general-options">yt-dlp</a> - i use this for yt-splitter to get audios from youtube and it is the goattt</li>
+					<ol>
+						<li>cd /path/to/directory/where/you/want/files/extracted/to</li>
+						<li>youtube-dl --extract-audio --split-chapters --audio-format mp3 [URL escape & with “&”]</li>
+					</ol>
+				<li>image conversion to webP:</li>
+					<ul>
+						<li>command line tutorial on <a href="https://web.dev/articles/codelab-serve-images-webp">web.dev</a></li>
+						<li>one-line scripts that i use (in Git Bash):</li>
+							<ol>
+								<li>convert 1 file: `for file in /c/path/to/file/*; do cwebp -q 100 "$file" -o "${file%.*}.webp"; done`</li>
+								<li>convert all files in a directory: find /c/path/to/file/ -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -exec bash -c 'cwebp -q 100 "$1" -o "${1%.*}.webp"' _ {} \;</li>
+							</ol>
+					</ul>
+			</ul>
+		<br>
+		<b>*code snippets coming soon*</b>
+	</main>
+</body>
+</html>
