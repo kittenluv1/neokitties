@@ -3,7 +3,7 @@ body {
   margin: 0; 
   background-color: darkblue;
   color: black;
-  font-family: Verdana;
+  font-family: simsun, Verdana;
   text-align: center; 
   display: grid; 
   grid-template-rows: auto auto; 
